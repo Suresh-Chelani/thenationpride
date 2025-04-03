@@ -28,88 +28,39 @@ const Header = () => {
             onClick={() => navigate("/")}
             className="flex items-center gap-5 cursor-pointer"
           >
-            <div className="flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="85"
-                viewBox="0 -50 562 562"
-              >
-                <g transform="rotate(45, 256, 256)">
-                  <path
-                    fill="#004697"
-                    d="M474.655,74.503C449.169,45.72,413.943,29.87,375.467,29.87c-30.225,0-58.5,12.299-81.767,35.566  
-c-15.522,15.523-28.33,35.26-37.699,57.931c-9.371-22.671-22.177-42.407-37.699-57.931c-23.267-23.267-51.542-35.566-81.767-35.566  
-c-38.477,0-73.702,15.851-99.188,44.634C13.612,101.305,0,137.911,0,174.936c0,44.458,13.452,88.335,39.981,130.418  
-c21.009,33.324,50.227,65.585,86.845,95.889c62.046,51.348,123.114,78.995,125.683,80.146c2.203,0.988,4.779,0.988,6.981,0  
-c2.57-1.151,63.637-28.798,125.683-80.146c36.618-30.304,65.836-62.565,86.845-95.889C498.548,263.271,512,219.394,512,174.936  
-C512,137.911,498.388,101.305,474.655,74.503z"
-                  />
-                </g>
-                <text
-                  x="160"
-                  y="170"
-                  fontFamily="Arial"
-                  fontSize="90"
-                  fill="white"
-                  fontWeight="bold"
-                >
-                  the
-                </text>
-                <text
-                  x="130"
-                  y="250"
-                  fontFamily="Arial"
-                  fontSize="90"
-                  fill="#59ffb9"
-                  fontWeight="bold"
-                >
-                  nation
-                </text>
-                <text
-                  x="140"
-                  y="340"
-                  fontFamily="Arial"
-                  fontSize="90"
-                  fill="white"
-                  fontWeight="bold"
-                >
-                  pride
-                </text>
-              </svg>
-            </div>
+            <h2 className="text-2xl">The Nation Pride</h2>
           </div>
 
           <div className="md:flex flex space-x-4 md:space-x-8 items-center">
             <a
               href="#"
-              className="text-gray-700 text-gray-900 hover:text-[#004697] hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               Stories
             </a>
             <a
               href="#"
-              className="text-gray-700 text-gray-900 hover:text-[#004697] hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               About
             </a>
             <a
               href="#"
-              className="text-gray-700 text-gray-900 hover:text-[#004697] hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               Brand Campaigns
             </a>
             <a
               href="#"
-              className="text-gray-700 text-gray-900 hover:text-[#004697] hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               Advertise With Us
             </a>
             <a
               href="#"
-              className="relative overflow-hidden text-white px-6 py-3 rounded-full font-semibold transition-all duration-500 border-2 border-transparent hover:border-[#59ffb9] shadow-lg hover:shadow-xl"
+              className="relative overflow-hidden text-white px-6 py-3 rounded-full font-semibold transition-all duration-500 border-2 border-transparent hover:border-amber-300 shadow-lg hover:shadow-xl"
             >
-              <span className="absolute inset-0 bg-[conic-gradient(at_50%_50%,#004697_0%,#004697_10%,#59ffb9_10%,#59ffb9_20%,#004697_20%,#004697_30%,#59ffb9_30%,#59ffb9_40%)] bg-[length:200%_200%] animate-wave"></span>
+              <span className="absolute inset-0 bg-[conic-gradient(at_50%_50%,#854d0e_0%,#854d0e_10%,#f59e0b_10%,#f59e0b_20%,#854d0e_20%,#854d0e_30%,#f59e0b_30%,#f59e0b_40%)] bg-[length:200%_200%] animate-wave"></span>
               <span className="relative z-10">Subscribe</span>
             </a>
 
@@ -171,12 +122,12 @@ C512,137.911,498.388,101.305,474.655,74.503z"
           style={{
             width: `${scrollProgress}%`,
             background: `repeating-linear-gradient(
-  to right,
-  #004697 0%,
-  #004697 10%,
-  #59ffb9 30%,
-  #59ffb9 20%
-)`,
+              45deg,
+rgb(95, 75, 39) 0%,
+              #f59e0b 10%,
+              #f97316 10%,
+              #f97316 20%
+            )`,
           }}
         />
       </div>

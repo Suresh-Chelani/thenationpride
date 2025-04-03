@@ -66,8 +66,7 @@ const articles = [
     title: "The Rise of Online Learning Platforms in India",
     date: "18 MAR 2025",
     readTime: "6 MIN READ",
-    imageUrl:
-      "https://validboards.in/wp-content/uploads/2023/03/image-2.png",
+    imageUrl: "https://validboards.in/wp-content/uploads/2023/03/image-2.png",
   },
   {
     category: "TRAVEL",
@@ -138,11 +137,33 @@ const CategoryPage = () => {
         </div>
       </div> */}
 
-      <div className="bg-gradient-to-r from-[#003087] to-[#004db3] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <p className="text-[#62E389] font-medium mb-2">READ STORIES ON</p>
-          <h1 className="text-5xl font-bold mb-6">{CategoryName}</h1>
-          <p className="text-gray-200 max-w-2xl">
+      <div className="relative bg-gradient-to-b from-amber-400 to-orange-500 py-16">
+        <div className="absolute inset-0 w-full h-full">
+          <svg
+            className="w-full h-full"
+            viewBox="0 0 1200 400"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ position: "absolute", top: 0, left: 0 }}
+          >
+            <path
+              d="M0,0 C300,50 400,100 1200,80 L1200,400 L0,400 Z"
+              fill="#ffffff"
+              fillOpacity="0.2"
+            />
+            <path
+              d="M0,100 C500,150 800,200 1200,180 L1200,400 L0,400 Z"
+              fill="#92400e"
+              fillOpacity="0.25"
+            />
+          </svg>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 z-100">
+          <p className="text-amber-900 font-semibold mb-2 tracking-wider">
+            READ STORIES ON
+          </p>
+          <h1 className="text-5xl font-bold mb-6 text-white">{CategoryName}</h1>
+          <p className="text-amber-50 max-w-2xl leading-relaxed">
             Discover inspiring stories about environmental conservation,
             sustainable living, and innovative solutions for a better tomorrow.
           </p>
