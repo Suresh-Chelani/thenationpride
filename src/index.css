@@ -9,3 +9,48 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@layer base {
+  .prose {
+    @apply max-w-none;
+  }
+  .prose p {
+    @apply mb-6 text-gray-800 leading-relaxed;
+  }
+  .prose h2 {
+    @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+  }
+  .prose img {
+    @apply rounded-lg;
+  }
+}
+
+@keyframes fadeIN {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIN 1s ease-out forwards;
+}

@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import CategoryPage from "./components/CategoryPage";
 import Shots from "./components/Shots";
 import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Blogs from "./components/Blogs";
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
             </>
           } />
           <Route path="/category/:id" element={<CategoryPage />} />
+          <Route path="/category/:id/:name" element={<Blogs />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         {/* Footer Section */}

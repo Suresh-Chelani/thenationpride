@@ -6,6 +6,7 @@ import {
   Linkedin,
   ArrowUp,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function App() {
   const scrollToTop = () => {
@@ -183,12 +184,12 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     className="hover:text-amber-900 transition-colors duration-200"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import { X } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Header = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -38,12 +38,12 @@ const Header = () => {
             >
               Stories
             </a>
-            <a
-              href="#"
+            <Link
+              to={"/about"}
               className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               About
-            </a>
+            </Link>
             <a
               href="#"
               className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
@@ -101,7 +101,7 @@ const Header = () => {
         </button>
         <h2 className="text-sm font-semibold">The Nation Pride</h2>
         <nav className="mt-4 space-y-3">
-          {["Home", "Topics", "About", "Stories", "Brand Campaigns"].map(
+          {["Home", "Topics", "About", "Stories", "Brand Campaigns,"].map(
             (item) => (
               <a
                 key={item}
@@ -112,9 +112,17 @@ const Header = () => {
               </a>
             )
           )}
+          <Link
+            to={"/contact"}
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            className="block p-2 rounded hover:bg-gray-200"
+          >
+            Contact
+          </Link>
         </nav>
       </div>
-
       {/* Progress Bar */}
       <div className="h-1 bg-gray-200">
         <div

@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 const Features = () => {
+  const navigate = useNavigate();
   const featuredSections = [
     {
       title: "Inspiring Changemakers",
@@ -169,6 +171,7 @@ const Features = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {section.articles.map((article, articleIndex) => (
               <div
+                onClick={() => {navigate(`/category/${section.title}/${article.title}`)}}
                 key={articleIndex}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
               >
