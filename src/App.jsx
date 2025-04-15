@@ -10,6 +10,9 @@ import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
+import BrandCampaigns from "./components/BrandCampaigns";
+import AdvertiseWithUs from "./components/AdvertiseWithUs";
+import Stories from "./components/stories";
 
 const App = () => {
   return (
@@ -32,6 +35,9 @@ const App = () => {
           <Route path="/category/:id/:name" element={<Blogs />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/brand" element={<BrandCampaigns/>}/>
+          <Route path="/advertise" element={<AdvertiseWithUs/>}/>
+          <Route path="/stories" element={<Stories/>}/>
         </Routes>
 
         {/* Footer Section */}

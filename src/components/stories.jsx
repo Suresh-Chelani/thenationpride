@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import CategoryCarousel from "./CategoryCarousel";
-import { useParams } from "react-router-dom";
 
 const articles = [
   {
@@ -87,9 +86,7 @@ const articles = [
 ];
 
 
-const CategoryPage = () => {
-  const param = useParams();
-  const CategoryName = param.id.split("-").join(" ").toUpperCase();
+const Stories = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -120,7 +117,7 @@ const CategoryPage = () => {
           <p className="text-amber-900 font-semibold mb-2 tracking-wider">
             READ STORIES ON
           </p>
-          <h1 className="text-5xl font-bold mb-6 text-white">{CategoryName}</h1>
+          <h1 className="text-5xl font-bold mb-6 text-white">Stories</h1>
           <p className="text-amber-50 max-w-2xl leading-relaxed">
             Discover inspiring stories about environmental conservation,
             sustainable living, and innovative solutions for a better tomorrow.
@@ -159,4 +156,4 @@ const CategoryPage = () => {
   );
 };
 
-export default CategoryPage;
+export default Stories;

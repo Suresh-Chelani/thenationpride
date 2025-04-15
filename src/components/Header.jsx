@@ -32,30 +32,30 @@ const Header = () => {
           </div>
 
           <div className="md:flex flex space-x-4 md:space-x-8 items-center">
-            <a
-              href="#"
+            <Link
+              to={"/stories"}
               className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               Stories
-            </a>
+            </Link>
             <Link
               to={"/about"}
               className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               About
             </Link>
-            <a
-              href="#"
+            <Link
+              to={"/brand"}
               className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               Brand Campaigns
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to={"/advertise"}
               className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
             >
               Advertise With Us
-            </a>
+            </Link>
             <a
               href="#"
               className="relative overflow-hidden text-white px-6 py-3 rounded-full font-semibold transition-all duration-500 border-2 border-transparent hover:border-amber-300 shadow-lg hover:shadow-xl"
