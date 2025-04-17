@@ -142,19 +142,19 @@ const Contact = () => {
                 <div className="flex space-x-6">
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-orange-500 transform hover:scale-110 transition-all duration-300"
+                    className="text-gray-600 hover:text-[#4fe1aa] transform hover:scale-110 transition-all duration-300"
                   >
                     <Github className="w-8 h-8" />
                   </a>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-orange-500 transform hover:scale-110 transition-all duration-300"
+                    className="text-gray-600 hover:text-[#4fe1aa] transform hover:scale-110 transition-all duration-300"
                   >
                     <Linkedin className="w-8 h-8" />
                   </a>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-orange-500 transform hover:scale-110 transition-all duration-300"
+                    className="text-gray-600 hover:text-[#4fe1aa] transform hover:scale-110 transition-all duration-300"
                   >
                     <Twitter className="w-8 h-8" />
                   </a>
@@ -253,7 +253,7 @@ const Contact = () => {
               )}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-b from-amber-400 to-orange-500 text-white py-3 px-6 rounded-lg transform hover:scale-105 transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-xl"
+                className="w-full bg-[#4fe1aa] text-white py-3 px-6 rounded-lg transform hover:scale-105 transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-xl"
               >
                 Send Message
               </button>

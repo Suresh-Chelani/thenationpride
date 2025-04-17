@@ -34,33 +34,33 @@ const Header = () => {
           <div className="md:flex flex space-x-4 md:space-x-8 items-center">
             <Link
               to={"/stories"}
-              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-[#215944] hidden md:flex uppercase"
             >
               Stories
             </Link>
             <Link
               to={"/about"}
-              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-[#215944] hidden md:flex uppercase"
             >
               About
             </Link>
             <Link
               to={"/brand"}
-              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-[#215944] hidden md:flex uppercase"
             >
               Brand Campaigns
             </Link>
             <Link
               to={"/advertise"}
-              className="text-gray-700 text-gray-900 hover:text-amber-900 hidden md:flex uppercase"
+              className="text-gray-700 text-gray-900 hover:text-[#215944] hidden md:flex uppercase"
             >
               Advertise With Us
             </Link>
             <a
               href="#"
-              className="relative overflow-hidden text-white px-6 py-3 rounded-full font-semibold transition-all duration-500 border-2 border-transparent hover:border-amber-300 shadow-lg hover:shadow-xl"
+              className="relative overflow-hidden text-white px-6 py-3 rounded-full font-semibold transition-all duration-500 border-2 border-transparent hover:border-[#215944] shadow-lg hover:shadow-xl"
             >
-              <span className="absolute inset-0 bg-[conic-gradient(at_50%_50%,#854d0e_0%,#854d0e_10%,#f59e0b_10%,#f59e0b_20%,#854d0e_20%,#854d0e_30%,#f59e0b_30%,#f59e0b_40%)] bg-[length:200%_200%] animate-wave"></span>
+              <span className="absolute inset-0 bg-[conic-gradient(at_50%_50%,#215944_0%,#215944_8%,#a4e1ca_8%,#a4e1ca_16%,#4fe1aa_16%,#4fe1aa_24%,#215944_24%,#215944_32%,#a4e1ca_32%,#a4e1ca_40%,#4fe1aa_40%,#4fe1aa_48%)] bg-[length:200%_200%] animate-wave"></span>
               <span className="relative z-10">Subscribe</span>
             </a>
 
@@ -131,10 +131,10 @@ const Header = () => {
             width: `${scrollProgress}%`,
             background: `repeating-linear-gradient(
               45deg,
-rgb(95, 75, 39) 0%,
-              #f59e0b 10%,
-              #f97316 10%,
-              #f97316 20%
+#3bdfa1 0%,
+              #a4e1ca 10%,
+              #0c3928 10%,
+              #a4e1ca 20%
             )`,
           }}
         />
